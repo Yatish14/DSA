@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Without Preserving Order
+// Without Preserving Order - Time - O(n), Space - O(1)
 
 // Traverse the array and whenever a 0 is found, swap it with the last non-zero element from the end.
 void moveAllZeroesToEndWithoutOrder(int a[], int n)
@@ -36,7 +36,7 @@ void moveAllZeroesToEndWithoutOrder(int a[], int n)
     }
 }
 
-// Preserving Order
+// Preserving Order - Time - O(n), Space - O(1)
 
 // Traverse the array, shift all non-zero elements forward, and fill the remaining slots with 0.
 void moveAllZeroesToEndWithOrder(int a[], int n)
@@ -61,7 +61,7 @@ void moveAllZeroesToEndWithOrder(int a[], int n)
     }
 }
 
-// Two Pointer Approach
+// Two Pointer Approach - Time - O(n), Space - O(1)
 void moveAllZeroesToEndTwoPointers(int a[], int n)
 {
     int j = 0;
